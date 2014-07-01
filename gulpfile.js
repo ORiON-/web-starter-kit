@@ -96,7 +96,7 @@ gulp.task('styles:styl', function () {
   return gulp.src('app/styles/**/*.styl')
     .pipe(stylus())
     .pipe($.autoprefixer('last 1 version'))
-    .pipe(gulp.dest('.tmp/styles'))
+    .pipe(gulp.dest('app/styles'))
     .pipe($.size({title: 'styles:styl'}));
 });
 
